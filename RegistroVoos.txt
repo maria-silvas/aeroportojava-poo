@@ -1,0 +1,24 @@
+
+ | ID: 1
+ | Numero: AZU986535
+ | Observacao: Bagagens-excedentes-serao-despachadas
+ | Piloto: Joaquim
+ | Copiloto: Serafim
+ | Origem: GRU
+ | Destino: JOI
+ | Data: 2022-12-07
+ | Hora: 16:20
+ | Pista: A101
+ | Aeromodelo: 1
+
+ | ID: 1
+ | Numero: MTZ123654
+ | Observacao: bagagens-excedentes-devem-despachar
+ | Piloto: Joao
+ | Copiloto: Jeremias
+ | Origem: GRU
+ | Destino: JOI
+ | Data: 2022-12-06
+ | Hora: 19:55
+ | Pista: A102
+ | Aeromodelo: 1
