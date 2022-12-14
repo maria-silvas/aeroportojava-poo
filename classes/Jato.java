@@ -77,12 +77,18 @@ public class Jato extends Aeromodelo {
     public static void alterarJato(int id, String input, int tipoDado, Connection conn) throws Exception {
 
         String campo = DefineTipoUpdate.defineCampoUpdate(tipoDado, getJatoById(id, conn));
-
-        PreparedStatement stmt = conn
-                .prepareStatement("UPDATE jato SET " + campo + " = ? WHERE id = ?");
-        stmt.setString(1, input);
-        stmt.setInt(2, id);
-        stmt.execute();
+try {
+    PreparedStatement stmt = conn
+    .prepareStatement("UPDATE jato SET " + campo + " = ? WHERE id = ?");
+stmt.setString(1, input);
+stmt.setInt(2, id);
+stmt.execute();
+System.out.println("Jato alterado com sucesso!");
+    
+} catch (Exception e) {
+    throw new Exception("Alteração não realizada!");
+}
+        
     }
 
     public static void deletarJato(int id, Connection conn) throws Exception {
